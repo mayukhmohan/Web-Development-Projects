@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAYUKH'S WORLD</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<header class="head">
+	<nav>
+		<ul>
+			<li><a href="/index.html"><b>Home</b></a></li>
+			<li><a href="/courses.html"><b>Courses</b></a></li>
+			<li><a href="/about.html"><b>About</b></a></li>
+			<li><a href="/contact.html"><b>Contact</b></a></li>
+		</ul>
+	</nav>
+	<img src="bower-logo.png" id="img">
+	<h1 id="h">HOME</h1>
+</header>
+
+	<section id="main">Hello Mayukh!!<br/>
+	<form action="/api/login" method="post" class="form" id="loginform">
+		<label for="username"><em>Username :</em></label>
+		<input type="text" name="username" id="username"><br/>
+		<label for="password"><em>Password :</em></label>
+		<input type="password" name="password" id="password"><br/>
+		<input type="checkbox" name="tick" id="tick"><label for="tick"><em>Remember me</em></label><br/>
+		<div id="errormsg">
+		</div><br/>
+		<input type="submit" name="login" value="login">
+		<input type="reset" name="cancel" value="cancel">
+	</form>
+	 <div id="logoutsection">
+	 	<p>You are already logged in.</p>
+	 	<button id="logoutbutton">Logoutbutton</button>
+	 </div>
+	<div id="results" class="box">
+	<button id="toggle">Hide</button>
+	<div id="resultlist">
+		Here we display all the process
+	</div>
+	</div>
+	</section>
+	<footer>
+		&copy 2017 mayukh wizard
+	</footer>
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>

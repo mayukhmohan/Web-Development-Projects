@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<title>My WebCam</title>
+<link rel="stylesheet" type="text/css" href="net.css">
+<style>
+div.select {
+  margin: 0 0 1em 0;
+}
+</style>
+
+</head>
+
+<body bgcolor="cyan">
+
+<div id="container">
+
+  <!--<div class="select">
+    <label for="audioSource">Audio source: </label><select id="audioSource"></select>
+  </div>-->
+
+  <div class="select">
+    <label for="videoSource">Video source: </label><select id="videoSource"></select>
+  </div>
+
+<div style="text-align:center;" id="container">
+  <video id="screenshot-video" class="videostream" muted autoplay></video>
+  <!--<img src="" id="screenshot-img">-->
+  <p>
+  	<button id="screenshot-button">Take screenshot</button>
+  </p>
+<canvas id="myCanvas"></canvas>
+
+</div>
+<div class="wrapper">
+<button id="toggle">Stop</button>
+<h1>This is My Webcam</h1>
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script> 
+<script type="text/javascript" src="net.js"></script>
+</body>
+</html>

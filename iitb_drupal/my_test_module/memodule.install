@@ -1,0 +1,30 @@
+<?php
+	function memodule_schema() {
+
+	 $schema['memodule'] = array(
+
+	   'description' => 'XAPI mymodule table.',
+	   'fields' => array(
+	     'username' => array(
+	       'type' => 'varchar',
+	       'not null' => TRUE,
+	       'length' => 255,
+	     ),
+
+	     'mbox' => array(
+	       'description' => 'Mail',
+	       'type' => 'varchar',
+	       'length' => 255,
+	       'not null' => TRUE,
+	     ),
+
+	     'verb' => array(
+	       'description' => 'Type of Interaction',
+	       'type' => 'varchar',
+	       'length' => 255,
+	       'not null' => TRUE,
+	     ),
+	   ),
+	 );
+	 return $schema;
+	}

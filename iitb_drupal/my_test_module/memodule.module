@@ -1,0 +1,19 @@
+<?php
+	/** Implements hook_theme().*/
+
+	function memodule_theme() {
+	 return array(
+	   'memodule_theme' => array( // Theme name
+	    'variables' => array( 'data' => array() ),
+	    'template' => 'memodule-theme', // Path to the template without .html.twig in which the same variables will be available as specified above
+	   ),
+	 );
+	}
+
+    function memodule_help($route_name, $arg) {
+	switch ($route_name) {
+    // Main module help for the block module.
+    case 'help.page.block':
+      return '<p>'.t('Blah Blah Blah...'). '</p>';          
+     }
+    }

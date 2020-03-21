@@ -1,0 +1,6 @@
+services:
+  memodule.db_logic:
+    class: Drupal\memodule\MeDbLogic
+    arguments: ['@database']
+    tags:
+      - { name: backend_overridable }

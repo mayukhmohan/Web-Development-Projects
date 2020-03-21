@@ -1,0 +1,5 @@
+core: 8.x
+description: Capturing XAPI statements in drupal 8
+name: Me Module
+package: Custom
+type: module

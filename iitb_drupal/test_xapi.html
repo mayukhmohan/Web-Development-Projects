@@ -1,0 +1,49 @@
+<!doctype html>  
+<head>  
+   <!-- Includes for ADL's xAPI Wrapper -->  
+   <!-- Download the files from: -->  
+   <!-- https://github.com/adlnet/xAPIWrapper -->  
+   <script type="text/javascript" src="cryptojs_v3.1.2.js"></script>  
+    <script type="text/javascript" src="xapiwrapper.min.js"></script>  
+      
+    <script>  
+    function send_statement(verbId, verb, name, objectId, description){  
+        var conf = {  
+             "endpoint" : "https://trial-lrs.yetanalytics.io/xapi/",  
+             "auth" : "Basic " + toBase64("d1dc905eda443e08d6ac491f49d922d0:5174cb4f5e56db00f6afc7e2ea51aa52")  
+             };  
+  
+        ADL.XAPIWrapper.changeConfig(conf);  
+           
+        //define the xapi statement being sent  
+        var statement = {  
+            "actor": {  
+                "mbox": "mailto:Hello@example.com",  
+                "name": "Mayukh",  
+                "objectType": "Agent"  
+            },  
+            "verb": {  
+                "id": verbId,  
+                "display": {"en-US": verb}  
+            },  
+            "object": {  
+                "id": objectId,  
+                "definition": {  
+                    "name": {"en-US": name},  
+                    "description": {"en-US": description}  
+                },  
+                "objectType": "Activity"  
+            }  
+        }; //end statement definition  
+   
+        // Dispatch the statement to the LRS  
+        var result = ADL.XAPIWrapper.sendStatement(statement);  
+        }  
+    </script>  
+  
+</head>  
+  
+<body>  
+    <button type="button" onclick="send_statement('http://example.com/xapi/interacted', 'interarcted', 'Button', 'http://example.com/button_example', 'Example xAPI Button')">Send Statements</button>  	
+</body>  
+</html>  

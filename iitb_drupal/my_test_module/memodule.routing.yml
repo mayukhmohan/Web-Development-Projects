@@ -1,0 +1,7 @@
+memodule.addrecord:
+  path: '/admin/memodule/viewrecord'
+  defaults: 
+    _form: '\Drupal\memodule\Utility\ViewMeModule'
+  requirements: 
+    _permission: 'view content'
+

@@ -1,0 +1,163 @@
+header
+{
+	background-color:lightblue;
+	border: 5px solid navy;
+	font-style: comic;
+}
+footer
+{
+	background-color:#7ecbf3;
+	border:5px solid rgb(12,25,78);
+	padding: 10px;
+	border-radius: 5px;
+}
+header nav
+{
+	float: right;
+
+}
+#img
+{
+	width: 80px;
+	height:80px;
+	display: inline;
+	padding: 5px;
+}
+#h
+{
+	display: inline;
+	vertical-align: top;
+	font-family: "comic-sans-ms";
+	color: olive;
+	font-size:80px;
+}
+header nav li
+{
+	display: inline;
+	font-size: 12px;
+	padding-right: 10px;
+}
+a
+{
+	color: #007fc0;
+}
+#main
+{
+	min-height: 450px;
+	border: 3px dashed khaki;
+	border-radius: 5px;
+	color: #202020;
+	margin:10px 0px;
+	padding: 5px;
+	background-color: lightblue;
+}
+html,body
+{
+	padding: 0px;
+	margin: 0px;
+}
+#results
+{
+	padding: 2px;
+	width: 300px;
+	display: inline-block;	
+	/*border:2px solid grey;*/
+	vertical-align: top;			/* block inline and inline-block*/
+}
+.result
+{
+	margin: 5px;
+	border: 1px solid red;
+	padding: 5px;
+	/*font-weight: bold;*/
+	color: orange
+}
+.result .title
+{
+	font-weight: bold;
+} 
+.container
+{
+	width:990px;
+	margin:0 auto;
+	padding: 5px;
+}
+.head
+{
+	height: 120px;
+}
+.box
+{
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.24), 0 0 4px 0 rgba(0,0,0,0.14);
+}
+form
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 400px;
+	border:2px solid skyblue;
+	padding: 5px;
+	margin: 5px;
+}
+#errormsg
+{
+	color: red;
+	font-size: 12px;
+}
+#logoutbutton
+{
+
+	background-color: #007fc0;
+	color: navy;
+	border-radius: 15px;
+	padding: 4px;
+	margin-top: 5px;
+	width: 100px;
+	font-weight: bold;
+
+}
+#logoutsection
+{
+	border: 1px solid violet;
+	width:400px;
+	display: inline-block;
+	color: green;
+	font-weight: bold;
+	margin: 2px;
+}
+
+body
+{
+	background-color: #007fc0;
+}
+#main label
+{
+	font-weight: bold;
+	width: 120px;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+#main input[type=text],
+#main input[type=password]
+{
+	width:200px;
+	border: 2px solid blue;
+}
+/* > symbol means immediate child
+ space means any of child
+ comma means shared resources*/
+ #main input[type=submit],
+#main input[type=reset],button
+{
+	background-color: #007fc0;
+	color: navy;
+	border-radius: 15px;
+	padding: 4px;
+	margin-top: 5px;
+	width: 100px;
+	font-weight: bold;
+}
+#main input[type=reset]
+{
+	background-color: lightgray;
+}

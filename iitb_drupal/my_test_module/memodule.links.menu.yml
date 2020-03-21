@@ -1,0 +1,6 @@
+mymodule.addrecord:
+  title: 'Memodule Configuration'
+  description: 'Add records to Custom XAPI Module'
+  parent: system.admin_config_system
+  route_name: memodule.addrecord
+  menu_name: devel
